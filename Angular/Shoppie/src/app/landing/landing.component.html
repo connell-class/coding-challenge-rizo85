@@ -1,0 +1,46 @@
+<div *ngIf="!showMainContent2" id="landing">
+
+    <form>  
+<div id="loginleft">
+    <h1 style="margin: 16px" class="login" style="background: white; border-radius: 10px; padding: 10px">Shoppie!</h1>
+
+    <h2 class="homebanner" style="background: white; border-radius: 10px; padding: 10px; margin-top: 80px;"><b><i>Lets make your shopping easier</i></b>
+    </h2>
+
+
+
+</div>
+<div id="loginright">
+    
+    
+ 
+            <p></p><br>
+            <div class="button_container">
+                <p class="description" style="color: black; background: white; border-radius: 10px; padding: 10px">ENTER</p>
+                <button (click)="ShowHideButton(); ShowHideButton2()" class="btn"><span>Lets Shop!</span></button>
+
+                
+             
+            </div>
+              
+              
+    
+    </div>
+
+</form>
+
+
+
+
+
+</div>
+
+
+<div id="actualshop" *ngIf="!showMainContent" >
+    <!--Actuall stuff-->
+<app-shop></app-shop>
+          
+
+<!--end actual stuff-->
+
+</div>
